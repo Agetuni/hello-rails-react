@@ -5,7 +5,7 @@ import { fetchApi } from '../redux/Greetings/Greeting';
 
 const Greeting = () => {
   const dispatch = useDispatch();
-  const natasha = useSelector(
+  const data = useSelector(
     (state) => (state.greetings),
   );
 
@@ -16,7 +16,7 @@ const Greeting = () => {
   return (
 
     <h1>
-      {natasha.greetings.message}
+      {data.greetings.message}
     </h1>
   );
 };

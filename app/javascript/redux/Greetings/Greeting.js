@@ -10,7 +10,7 @@ export const getData = (payload) => ({
 });
 
 export const fetchApi = () => (dispatch) => {
-  fetch('http://127.0.0.1:5000/api/v1/greetings').then((response) => response.json()).then((data) => {
+  fetch('http://127.0.0.1:3000/api/v1/greetings').then((response) => response.json()).then((data) => {
     dispatch(getData(data));
   });
 };
